@@ -1,0 +1,51 @@
+<div class="card  border-primary mb-3">
+    <div class="card-header">Proveedores</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Listado de Proveedores</h5>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr class="titulost" id="titulost">
+                    <th colspan="1">Amazon</th>
+                    <th colspan="1">eBay</th>
+                    <th colspan="1">AliExpress</th>
+                </tr>               
+            </thead>
+            <tbody>
+                <th *ngFor="let proveedores of proveedores">
+                    {{proveedores.nombre }}<br>
+                    {{proveedores.producto}}<br>
+                    {{proveedores.direccion}}<br>
+                    {{proveedores.telefono}}<br>
+                </th>
+                <tr>
+                    <th><a href="https://www.amazon.com/-/es/Super-Mario-3D-World-Bowsers-Fury/dp/B08H9M7LDY/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=33VW1IS7RP576&keywords=super+mario+3d&qid=1646351986&sprefix=super+mario+3d%2Caps%2C147&sr=8-1"><img class="imgt" id="imgt" src="https://http2.mlstatic.com/D_NQ_NP_789789-MEC46913389778_072021-O.jpg"></a></th>
+                    <th><a href="https://www.ebay.com/itm/154288582477?_trkparms=ispr%3D1&hash=item23ec50ef4d:g:X7YAAOSwRwNf~SBn&amdata=enc%3AAQAGAAACoPYe5NmHp%252B2JMhMi7yxGiTJkPrKr5t53CooMSQt2orsStEKTPzZMfQmny3knR97t0MXLOVUlioIfV56gqCqtc7JZcrDB%252F1KhwSjoUJVwXdN9KHifMx4PKBaBPTO23tKGaunznYmJXln%252F5i8NtUP7olDDCFYAbh9Ec87QHomfi2qPexRVEuap0x%252FQsC%252Byl1YmeoluNwYZ2vKhBdk70%252FhSI4l%252FpTbx%252Ba0%252Fpf%252Fs%252BN6hwA6d1LZlq%252BdEdXwzClTaqYliQfws%252F9aZt%252B9%252B15JKOwE%252F3dJb4CqQjQqhxX5suLJIQFos%252FzOD%252BtasPA6tsIPetgOo%252F6jcT4xuxiQrw2lXuyUtgi67Cbgt79O0kX1cJfeqEMBF8pKiyCupOaYGejznDPg4I6IknIiyTHvE5Ph0hVG7yhIq3MBuIFn1qDNVFqFuNIVtwyxM6qyLcoDT5NIChV4pxlljjFDmzkcOd411%252B8U3TQgkWsHpyAcsBbwTFnjStjPKUhqaU4wUH4R5nNws%252BuQUirYJpGyWs%252FnO0BJcQfYWQY9SR%252FejPKAjFNLXbZ187bdGYFLqmQvgje6KoUlwlCrOmTw9O4hHGkKAEBhYR3Eam4%252BIlhCVoBz3YN6pi%252B2YwdE3chwjGyXtBvbK%252FR4WmccWfaJUBGKtKoxctrA9K8Cj7PJDjhToWeeoSd0EKbu1cBpAqtbRX2h61vlnv%252FBKYgskjecqv%252FtSbvMF1GVj4uFHv4x3RIEnHNbtMxOSpWFCNNsibuZyGndWrsYyChUIF2rXTdW1J5b0oLHX3KLtAJ18HHKAPDfODk4IIgGpla%252FXpY0Cl8ZjoYkJUGOxUy0lKleQl2%252F1c%252F1oYl6XRrnWzNtB09ErbjCzNVpK7BAnIcPU%252BX5UbtrXpEH5Uca%252B4h%252FrAJSn1g%253D%253D%7Cclp%3A2334524%7Ctkp%3ABFBM6PvYo-pf"><img class="imgt" id="imgt" src="https://images.cults3d.com/sORQ12UUJl93eUKvibCsnsi4m1k=/https://files.cults3d.com/uploaders/16067990/illustration-file/ce694455-9c17-4a89-ae67-04cc82d7454b/Mario-01.png"></a></th>
+                    <th><a href="https://es.aliexpress.com/item/1005003533362635.html?spm=a2g0o.productlist.0.0.110a5338rE9irc&algo_pvid=76db4fdf-4f09-49a3-b08b-32839c1bbd3f&algo_exp_id=76db4fdf-4f09-49a3-b08b-32839c1bbd3f-3&pdp_ext_f=%7B%22sku_id%22%3A%2212000026199245479%22%7D&pdp_pi=-1%3B75.16%3B-1%3B6209%40salePrice%3BUSD%3Bsearch-mainSearch"><img class="imgt" id="imgt" src="https://www.jugueteriasnikki.es/34153-thickbox_default/lego-mario-bros-crea-tu-propia-aventura.jpg"></a></th>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <!--Infromacion adicional-->
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr class="titulost" id="titulost">
+                    <th colspan="1">Mercado Libre</th>
+                    <th colspan="1">OLX</th>
+                    <th colspan="1">YaEsta</th>
+                </tr>               
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <th><a href="https://articulo.mercadolibre.com.ec/MEC-507752071-nintendo-game-and-watch-super-mario-bros-entrega-inmediata-_JM#position=2&search_layout=stack&type=item&tracking_id=9d7dd8ff-5ebf-4aee-83ef-4393250098cc"><img class="imgt" id="imgt" src="https://www.lameesoftware.com/pub/media/catalog/product/cache/21e0df30592b4fb5feb82a470d3ce936/n/e/neshgwm_1.jpg"></a></th>
+                    <th><a href="https://www.olx.com.ec/item/super-mario-bros-nintendo-oficial-gigante-50-cm-nuevo-paquete-iid-1106332252"><img class="imgt" id="imgt" src="https://images.ssstatic.com/figura-gigante-super-mario-50-cm-30900456z0-14154067.jpg"></a></th>
+                    <th><a href="https://www.yaesta.com/b0744xtwl4-nintendo-2ds-new-super-mario-bros-2-edition/p"><img class="imgt" id="imgt" src="https://http2.mlstatic.com/D_NQ_NP_650188-MCO31567395888_072019-O.jpg"></a></th>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+  </div>

@@ -1,0 +1,59 @@
+<!--Menu-->
+<app-header></app-header>
+<!--fin menu-->
+<div class="container-fluid">
+</div>
+<!--Titulo de la pagina web-->
+<h2>{{title}}</h2>
+<ul>
+  <!--Utilizo una clase para separarla del parrafo-->
+  <div class="datos">
+    <li>Curso: {{curso}}</li>
+    <li>Nombre: {{nombre}}</li>
+    <li>Instituto: {{instituto}}</li>
+  </div>
+  <br>
+  <!--creo nueva clase para que contenga mi parrafo con css-->
+  <div class="parrafo">
+    <img src="assets/imagenes/mario4.gif">
+    <p>
+      El héroe principal del Reino Champiñón. Mario es muy positivo y siempre está alegre. Lo podrás reconocer por sus overoles
+      de color azul, su gorra roja y su característico bigote.
+      La princesa Peach lo considera su amigo de confianza, y todo el mundo los conoce a él y a su hermano Luigi por sus 
+      actos de valentía.Mario se destaca en deportes como tenis, golf, béisbol, fútbol y hasta en las carreras de karts. 
+      ¡Es bueno en todos los deportes! Es plomero de profesión, pero la verdad es que es un experto en todos los oficios.
+      Mario utiliza su poderosa habilidad para saltar y una gran cantidad de mejoras para enfrentarse a su archienemigo, Bowser.
+    </p>
+  </div>
+  <div class="parrafo2">
+    <img src="assets/imagenes/herm2.gif">
+    <p>
+      Hermano de Mario y héroe del Reino Champiñón. Luigi es reconocido instantáneamente por su gorra y camisa de color verde.
+      Luigi es amable, pero un poco de nervioso, especialmente si hay fantasmas por ahí.
+    </p>
+  </div>
+  <div class="parrafo3">
+    <img src="assets/imagenes/prince.gif">
+    <p>
+      La querida princesa del Reino Champiñón. Es extremadamente amable y siempre está trabajando para crear un mundo en el que todos 
+      puedan convivir juntos y felices. Su famoso vestido color rosa es encantador.
+    </p>
+  </div>
+</ul>
+
+
+<!--Lista de personajes-->
+<section class="lista" id="lista">
+  <app-directiva></app-directiva>
+</section>
+<br>
+<!--lista de clientes-->
+<section class="clientes" id="clientes">
+  <app-clientes></app-clientes>
+</section>
+<!--lista de proveedores-->
+<section class="proveedores" id="proveedores">
+<app-proveedores></app-proveedores>
+</section>
+<!--pie de pagina-->
+<app-footer></app-footer>

@@ -1,0 +1,26 @@
+<!--habilitar el boton-->
+<button type = "button" (click) = "setHabilitar()" class= "btn btn-primary my-3">{{habilitar==true? 'Ocultar': 'Mostrar'}}</button>
+<div class="card">
+    <div class="card-header">
+        <h3>PERSONAJES</h3>
+    </div>
+
+    <!--se separa por partes-->
+    <ul class="list-group" *ngIf="habilitar == true">
+        <li class="list-group-item"><h5>Personajes Principales</h5></li>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let lista of listaPersonajes">{{ lista }}</li>
+        </ul>
+
+        <li class="list-group-item"><h5>Princesas</h5></li>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let lista of listaPrincesas">{{ lista }}</li>
+        </ul>
+
+        <li class="list-group-item"><h5>Villanos</h5></li>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let lista of listaVillanos">{{ lista }}</li>
+        </ul>
+    </ul>
+   
+</div>

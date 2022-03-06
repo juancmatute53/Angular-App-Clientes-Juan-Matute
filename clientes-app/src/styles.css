@@ -1,0 +1,157 @@
+/*aqui en este estilo voy a insertar una imagen y centrar la imagen como fondo*/
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(mario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*aqui ajusto texto y centro con el fondo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*aqui agrego efecto de desenfoque con tonalidad de colores*/
+body::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*selecciono los colores que seran mi fondo de desenfoque*/
+    background: linear-gradient(90deg,
+    #52c4df,#ee8ebb);
+    /*ajusto opacidad del fondo*/
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/*selecciono el tipo de letra y tamaño y color de la clase datos*/
+.datos{
+    color: rgb(0, 0, 0);
+    font-family: 'Francois One', sans-serif;
+    font-size: 22px;
+}
+
+/*selecciono el tipo de letra y tamaño y color de la clase parrafo*/
+.parrafo{
+    /*estilo para generar el recuadro que contendra mi parrafo*/
+    z-index: 1;
+    width: 540px;
+    height: 410px;
+    padding: 20px 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    background: #91323f;
+    box-shadow: 1px 5px 25px rgba(250, 6, 6, 0.45);
+    border-radius: 15px;
+    /*ajustes del tipo de letra*/
+    text-align: justify;
+    font-family: 'Averia Serif Libre', cursive;
+    color: white;
+    font-size: 18px;
+}
+.parrafo2{
+    /*estilo para generar el recuadro que contendra mi parrafo*/
+    z-index: 1;
+    width: 540px;
+    height: 200px;
+    padding: 20px 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    background: #30d662;
+    box-shadow: 1px 5px 25px rgba(136, 255, 0, 0.45);
+    border-radius: 15px;
+    /*ajustes del tipo de letra*/
+    text-align: justify;
+    font-family: 'Averia Serif Libre', cursive;
+    color: white;
+    font-size: 18px;
+    float: right;
+    margin-left: 610px;
+    margin-top: -410px;
+    
+}
+
+.parrafo3{
+    /*estilo para generar el recuadro que contendra mi parrafo*/
+    z-index: 1;
+    width: 540px;
+    height: 200px;
+    padding: 20px 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    background: #e459cd;
+    box-shadow: 1px 5px 25px rgba(255, 0, 149, 0.45);
+    border-radius: 15px;
+    /*ajustes del tipo de letra*/
+    text-align: justify;
+    font-family: 'Averia Serif Libre', cursive;
+    color: white;
+    font-size: 18px;
+    margin-left: 610px;
+    margin-top: -200px;
+
+}
+
+/*para configurar el menu*/
+.navbar {
+    border-radius: 15px;
+    margin-top: 70px;
+}
+
+/*ajustes de alineacion y tama;o de la imagen dentro del parrafo*/
+img{  
+    border-radius: 15px;
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+}
+
+.parrafo3 img{
+    margin-left: 8px;
+    margin-top: -180px;
+    float: left;
+}
+
+/*selecciono el tipo de letra y tamaño y color del titulo*/
+
+h2{
+    color: #ffffff;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*estilo para el pie de pagina*/
+footer{
+    color: white;
+    margin-left: -410px;
+    margin-right: -410px;
+    margin-top: 125px;
+
+}
+ 
+.lista{
+    margin-top: 250px;
+}
+.clientes{
+    margin-top: 150px;
+}
+
+.proveedores{
+    margin-top: 530px;
+}
+
+.titulost{
+    text-align: center;
+}
+
+.imgt{
+    width: 150px;
+}
+
